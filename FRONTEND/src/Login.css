@@ -1,0 +1,114 @@
+/* General styling for the login page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container for centering the form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #c06af1, #8ad2eb); /* Gradient background */
+}
+
+/* Form styling */
+form {
+    background-color: #fff;
+    background-image: url('logiin.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin-top: 20px; /* Space from top */
+}
+
+/* Header styling */
+form h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #0b0b0b;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Additional info section */
+.additional-info {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.additional-info p {
+    color: #555;
+}
+
+.additional-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+        width: 95%;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .additional-info {
+        font-size: 12px;
+    }
+}
